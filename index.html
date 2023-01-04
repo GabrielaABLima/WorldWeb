@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--LINK CSS-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--LINK FONTE GOOGLE-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <!--LINK ICONES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--LINK JS-->
+    <script src="restCountryAPI.js"></script>
+    <title>World Web</title>
+</head>
+<body>
+    
+    <div id="topo">
+        <h1 id="titulo">WORLD WEB</h1>
+        <form>
+            <input id="paisTxt" type="text" name="paisTxt">
+            <button id="enviar" onclick="getCountry(event)" type="button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+        </form>
+    </div>
+
+
+    <div id="pais">
+        <div id="flag">
+            <img src="" alt="" id="flagImg">
+
+        </div>
+        <div id="info-container">
+            <p>
+                Continente:
+                <input readonly id="continente" class="dados">
+            </p>
+            <p>
+                Capital:
+                <input readonly id="capital" class="dados">
+            </p>
+            <p>
+                População:
+                <input readonly id="populacao" class="dados">
+            </p>
+            <p>
+                Área:
+                <input readonly id="area" class="dados">
+            </p>
+
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
